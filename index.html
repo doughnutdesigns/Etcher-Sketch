@@ -92,7 +92,7 @@
   <!-- end services -->
 
   <!-- begin email-subscribe -->
-  <div class="email">
+  <div class="email" id="subscribe">
     <div class="container">
       <h1>Subscribe to our newsletter</h1>
       <form name="subscribe">
@@ -166,7 +166,6 @@
       }
     </script>
     
-<<<<<<< HEAD
     <script>
 
 var homePlace = $("#home").offset().top - 70;
@@ -196,33 +195,7 @@ $(document).scroll(function(){
     	$('#gallery-link').parent().addClass('active');
     }
 });
-=======
-    <script>
-
-var homePlace = $("#home").offset().top - 70;
-var servicesPlace = $("#services").offset().top - 70;
-var galleryPlace = $("#gallery").offset().top - 70;
-
-$(document).scroll(function(){
-	if($(this).scrollTop() > homePlace)
-    {   
-    	$('.active').removeClass('active');
-    	$('#home-link').parent().addClass('active');
-    }
-    if($(this).scrollTop() > servicesPlace)
-    {   
-    	$('.active').removeClass('active');
-    	$('#services-link').parent().addClass('active');
-    }
-    if($(this).scrollTop() > galleryPlace)
-    {   
-    	$('.active').removeClass('active');
-    	$('#gallery-link').parent().addClass('active');
-    }
-});
->>>>>>> 2c4c35d8c64bde2b92dae451023db6328764ae2e
 </script>
-    
         <script>
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
