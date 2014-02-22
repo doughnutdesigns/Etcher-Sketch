@@ -201,14 +201,20 @@
 </script>
 
 <script>
+$(document).ready(function() {
+  $('#services').css("visibility", "hidden");
+})
       if($('#header').inViewport()) {
         $('#header').addClass('animated bounceInLeft');
       } else {
         $('#header').addClass('animated bounceInLeft');
       }
-      if($('#services').inViewport()) {
-        $('#services').addClass('animated bounceIn');
+      $(document).scroll(function() {
+      if($('#services').inViewport('horizontal')) {
+        $('#services').css("visibility", "visible");
+        $('#services').addClass('animated fadeInUp');
       }
+    });
     </script>
     
     <script>
