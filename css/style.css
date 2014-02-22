@@ -145,7 +145,7 @@ h1 {
 
 .jumbotron p {
 	padding-bottom: 25px;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 .btn-primary {
@@ -187,11 +187,14 @@ h1 {
 	font-size: 26px;
 	font-weight: 300;
 	padding-bottom: 20px;
+	font-weight: 700;
 }
 
 .services p {
 	padding-bottom: 20px;
 	font-size: 16px;
+	font-weight: 600;
+	color: #95a5a6;
 }
 
 .services i {
