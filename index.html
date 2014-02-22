@@ -203,18 +203,18 @@
 <script>
 $(document).ready(function() {
   $('#services').css("visibility", "hidden");
+  $(document).scroll(function() {
+      if($('#services').inViewport('horizontal')) {
+        $('#services').css("visibility", "visible");
+        $('#services').addClass('animated fadeInUp');
+      }
+    });
 })
       if($('#header').inViewport()) {
         $('#header').addClass('animated bounceInLeft');
       } else {
         $('#header').addClass('animated bounceInLeft');
       }
-      $(document).scroll(function() {
-      if($('#services').inViewport('horizontal')) {
-        $('#services').css("visibility", "visible");
-        $('#services').addClass('animated fadeInUp');
-      }
-    });
     </script>
     
     <script>
