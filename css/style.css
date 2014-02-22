@@ -301,8 +301,9 @@ blockquote {
   float: left;
   margin-right: 5px;
 }
-.quovolve-nav a {
-  
+
+.quovolve li {
+	list-style: none;
 }
 
 .quovolve li p.quote {
@@ -354,15 +355,6 @@ blockquote {
   background: rgba(236, 240, 241,1.0);
 }
 
-.nav-prev {
-	position: relative;
-	float: left;
-}
-
-.nav-next {
-	position: absolute;
-	float: right;
-}
 
 /**
  * Navigation Description
