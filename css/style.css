@@ -25,8 +25,9 @@ h1 {
 }
 
 .navbar-brand {
-	font-family: 'Lily Script One', cursive;
-	color: #ecf0f1 !important;
+	font-family: 'Lato', cursive;
+	font-weight: 300;
+	color: #7f8c8d !important;
 	font-size: 24px;
 }
 
