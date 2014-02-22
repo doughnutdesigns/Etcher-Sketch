@@ -32,7 +32,6 @@ h1 {
 }
 
 .navbar-toggle {
-	border: 3px solid #34495e !important;
 	-webkit-transition: 0.2s background-color ease-in;
 	transition: 0.2s background-color ease-in;
 	-moz-transition: 0.2s background-color ease-in;
@@ -46,6 +45,10 @@ h1 {
 
 .navbar-toggle:focus {
 	background-color: #34495e !important;
+}
+
+.navbar-inverse {
+	border: none;
 }
 
 .navbar-nav li {
@@ -77,13 +80,22 @@ h1 {
 
 .jumbotron {
 	text-align: center;
-	background: url('../img/bridge.jpg');
+	background: rgba(0,0,0,0) url('../img/nuke.jpg');
 	background-size: cover;
 	background-position: center;
 	color: #ecf0f1;
 	width: 100%;
 	height: auto;
 	padding: 90px 0 90px 0;
+	position: relative;
+	z-index: 100;
+}
+
+.jumbotron:before {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background-color: rgba(0,0,0,0);
+  content: ' ';
 }
 
 .jumbotron h1 {
@@ -112,6 +124,8 @@ h1 {
 	text-align: center;
 	color: #ecf0f1;
 	padding-bottom: 60px;
+	position: relative;
+	z-index: 200;
 }
 
 .services h1 {
