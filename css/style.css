@@ -7,8 +7,7 @@
 }
 
 body {
-	padding-top: 70px;
-  padding-bottom: 20px;
+  padding-top: 70px;
   font-family: 'Lato', sans-serif;
   background-color: #ecf0f1;
 }
@@ -41,6 +40,7 @@ h1 {
 	line-height: 35px;
 }
 
+<<<<<<< HEAD
 .navbar-toggle {
 	margin: 0px;
 	margin-top: 17px;
@@ -66,6 +66,30 @@ h1 {
 
 .navbar-toggle:focus{
 	background-color: #34495e !important;
+=======
+.navbar-toggle {
+	line-height: 80px;
+	margin: 0px;
+	margin-top: 23px;
+	outline: none;
+	background: #2c3e50;
+	border: 2px solid #fff;
+	color: #fff;
+	position: abslolute;
+	z-index: 2000;
+	transition: 0.5s background ease-in-out;
+	-o-transition: 0.5s background ease-in-out;
+	-moz-transition: 0.5s background ease-in-out;
+	-webkit-transition: 0.5s background ease-in-out;
+}
+
+.navbar-toggle:hover {
+	background-color: #34495e !important;
+}
+
+.navbar-toggle:focus{
+	background-color: #34495e !important;
+>>>>>>> 65dbb64bf99e12aee355469f578038e8e59f3a1e
 }
 
 

@@ -96,9 +96,10 @@
     <div class="container">
       <h1>Subscribe to our newsletter</h1>
       <div class="row">
-        <form name="subscribe" method="post" action="">
-          <div class="col-md-10"><input placeholder="Enter your email address" class="subscribe" type="email"></div>
+        <form id="newsletter-signup" name="newsletter-signup" method="post" action="php/subscribe.php?action=signup">
+          <div class="col-md-10"><input placeholder="Enter your email address" name="signup-email" id="signup-email" class="subscribe" type="email"></div>
           <div class="col-md-2"><input value="Subscribe" class="submit" type="submit"></div>
+          <p id="signup-response" class="signup-response"></p>
         </form>
       </div>
     </div>
@@ -182,6 +183,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/inviewport.js"></script>
     <script src="js/jquery.quovolver.min.js"></script>
+    <script src="js/subscribe.js"></script>
     <script>
     $(document).ready(function() {
   // Call Quovolver on the '.quotes' object
