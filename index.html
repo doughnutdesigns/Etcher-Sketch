@@ -26,6 +26,8 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+   
+
   </head>
 
   <body>
@@ -42,7 +44,7 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">Home</a></li>
+            <li class="active"><a href="#home">Home</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#testimonials">Testimonials</a></li>
@@ -53,7 +55,7 @@
     </div>
 
     <!-- splash with introduction to your site -->
-    <div class="jumbotron">
+    <div class="jumbotron" id="home">
       <div id="header" class="container">
         <h1>Welcome to our site</h1>
         <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
@@ -62,8 +64,8 @@
     </div>
 
 <!-- begin services -->
-    <div class="services">
-      <div id="services" class="container">
+    <div class="services" id="services">
+      <div class="container">
         <h1>From us to you</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet porta nunc. Etiam congue neque consequat libero fermentum, ac suscipit turpis placerat. Ut semper purus eget urna condimentum consequat. Aliquam erat volutpat.</p>
       <!-- Example row of columns -->
@@ -151,5 +153,22 @@
         $('#services').addClass('animated bounceIn');
       }
     </script>
+    
+        <script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top - 70
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+	</script>
   </body>
 </html>
