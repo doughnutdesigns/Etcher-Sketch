@@ -85,15 +85,15 @@ h1 {
 
 .navbar-nav li.active a {
 	background-color: transparent !important;
-	color: #1abc9c !important;
+	color: #3498db !important;
 }
 
 .navbar-nav li.active {
-	border-bottom: 3px solid #1abc9c;
+	border-bottom: 3px solid #3498db;
 }
 
 .navbar-nav li a:hover {
-	color: #1abc9c !important;
+	color: #3498db !important;
 }
 
 /* === SPLASH === */
@@ -127,9 +127,9 @@ h1 {
 }
 
 .btn-primary {
-	background-color: #1abc9c;
+	background-color: #3498db;
 	border: none;
-	border-bottom: 3px solid #16a085;
+	border-bottom: 3px solid #2980b9;
 	-webkit-transition: 0.2s all ease-in;
 	transition: 0.2s all ease-in;
 	-moz-transition: 0.2s all ease-in;
@@ -173,7 +173,7 @@ h1 {
 
 .services i {
 	font-size: 42px;
-	color: #1abc9c;
+	color: #2980b9;
 }
 
 /* === GALLERY === */
