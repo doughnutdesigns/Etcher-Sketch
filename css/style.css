@@ -26,7 +26,12 @@ h1 {
 
 .navbar {
 	background: #ecf0f1;
-	padding: 10px 0 10px 0;
+	height: 70px;
+	padding: 0px;
+}
+
+.navbar-header {
+	height: 70px;
 }
 
 .navbar-brand {
@@ -34,6 +39,7 @@ h1 {
 	font-weight: 700;
 	color: #7f8c8d !important;
 	font-size: 24px;
+	line-height: 35px;
 }
 
 .navbar-toggle {
@@ -56,25 +62,36 @@ h1 {
 	border: none;
 }
 
+.navbar-nav {
+	height: 70px;
+}
+
 .navbar-nav li {
 	padding-left: 5px;
 	padding-right: 5px;
+	height: 70px;
+	border-bottom: 3px solid #ecf0f1;
 }
 
 .navbar-nav li a {
 	color: #7f8c8d !important;
 	font-size: 16px;
-	font-weight: 700;
+	font-weight: 400;
 	cursor: pointer;
-	-moz-transition: 0.5s color ease-in-out, 0.5s background ease-in-out;
-	-o-transition: 0.5s color ease-in-out, 0.5s background ease-in-out;
-	transition: 0.5s color ease-in-out, 0.5s background ease-in-out;
-	-webkit-transition: 0.5s color ease-in-out, 0.5s background ease-in-out;
+	line-height: 35px;
+	-moz-transition: color 0.5s ease;
+	-o-transition: color 0.5s ease;
+	transition: color 0.5s ease;
+	-webkit-transition: color 0.5s ease;
 }
 
 .navbar-nav li.active a {
 	background-color: transparent !important;
 	color: #1abc9c !important;
+}
+
+.navbar-nav li.active {
+	border-bottom: 3px solid #1abc9c;
 }
 
 .navbar-nav li a:hover {
