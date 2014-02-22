@@ -133,8 +133,9 @@ h1 {
 }
 
 .btn-primary:hover {
-	background-color: #16a085;
-	border-color: #1abc9c;
+	background-color: #ecf0f1;
+	border-color: #ecf0f1;
+	color: #7f8c8d;
 }
 
 /* === SERVICES === */
