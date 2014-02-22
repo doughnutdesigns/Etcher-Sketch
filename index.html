@@ -46,9 +46,10 @@
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="#home" id="home-link">Home</a></li>
             <li><a href="#services" id="services-link">Services</a></li>
+            <li><a href="#subscribe" id="subscribe-link">Subscribe</a></li>
             <li><a href="#gallery" id="gallery-link">Gallery</a></li>
             <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -163,6 +164,7 @@
 
 var homePlace = $("#home").offset().top - 70;
 var servicesPlace = $("#services").offset().top - 70;
+var subscribePlace = $("#subscribe").offset().top - 70;
 var galleryPlace = $("#gallery").offset().top - 70;
 
 $(document).scroll(function(){
@@ -175,6 +177,11 @@ $(document).scroll(function(){
     {   
     	$('.active').removeClass('active');
     	$('#services-link').parent().addClass('active');
+    }
+    if($(this).scrollTop() > subscribePlace)
+    {   
+    	$('.active').removeClass('active');
+    	$('#subscribe-link').parent().addClass('active');
     }
     if($(this).scrollTop() > galleryPlace)
     {   
