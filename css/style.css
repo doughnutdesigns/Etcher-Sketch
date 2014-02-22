@@ -131,6 +131,9 @@ h1 {
 	border: none;
 	border-bottom: 3px solid #16a085;
 	-webkit-transition: 0.2s all ease-in;
+	transition: 0.2s all ease-in;
+	-moz-transition: 0.2s all ease-in;
+	-o-transition: 0.2s all ease-in;
 }
 
 .btn-primary:hover {
