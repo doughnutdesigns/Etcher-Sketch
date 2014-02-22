@@ -15,7 +15,7 @@ body {
 
 h1 {
 	font-family: 'Lato', cursive;
-	font-weight: 800;
+	font-weight: 900;
 }
 
 /* === NAVIGATION === */
@@ -60,7 +60,7 @@ h1 {
 .navbar-nav li a {
 	color: #7f8c8d !important;
 	font-size: 16px;
-	font-weight: 500;
+	font-weight: 700;
 	cursor: pointer;
 	-moz-transition: 0.5s color ease-in-out, 0.5s background ease-in-out;
 	-o-transition: 0.5s color ease-in-out, 0.5s background ease-in-out;
