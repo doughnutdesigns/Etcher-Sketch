@@ -148,12 +148,17 @@ h1 {
 	z-index: 200;
 }
 
+.services .row {
+	margin-top: 40px;
+}
+
 .services h1 {
 	padding-bottom: 20px;
 }
 
 .services h2 {
-	font-weight: 400;
+	font-size: 26px;
+	font-weight: 300;
 	padding-bottom: 20px;
 }
 
@@ -163,7 +168,7 @@ h1 {
 }
 
 .services i {
-	font-size: 36px;
+	font-size: 42px;
 	color: #1abc9c;
 }
 
