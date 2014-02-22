@@ -195,16 +195,34 @@ h1 {
 	padding-bottom: 40px;
 }
 
+.email .row {
+	margin-top: 40px;
+}
+
 .subscribe {
 	color: #95a5a6;
 	width: 100%;
-	margin-top: 30px;
 	border-radius: 8px;
 	border: 3px solid #2980b9;
 	height: 45px;
 	padding: 10px;
 	text-align: center;
 	font-size: 16px;
+	border: none;
+}
+
+.subscribe:focus {
+	outline: none;
+}
+
+.submit {
+	background-color: #2980b9;
+	box-sizing: border-box;
+	height: 45px;
+	border-radius: 8px;
+	width: 100%;
+	font-size: 16px;
+	border: none;
 }
 
 /* === GALLERY === */
