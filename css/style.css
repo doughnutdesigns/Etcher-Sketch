@@ -270,7 +270,107 @@ h1 {
 
 /* === TESTIMONIALS === */
 
+.testimonials {
+	background-color: rgba(52, 152, 219,0.8);
+	color: #fff;
+	text-align: center;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
 
+.quovolve-nav:before, .quovolve-nav:after {
+  content: "\0020"; display: block; height: 0; visibility: hidden;  
+} 
+.quovolve-nav:after { clear: both; }
+
+.quovolve-nav {
+	
+}
+.quovolve-nav-above {
+  margin-bottom: 20px;
+}
+.quovolve-nav-below {
+  margin-top: 20px;
+}
+
+blockquote {
+	border: none !important;
+}
+
+.quovolve-nav span {
+  float: left;
+  margin-right: 5px;
+}
+.quovolve-nav a {
+  
+}
+
+.quovolve li p.quote {
+	font-size: 24px;
+	font-weight: 300;
+}
+
+.quovolve-nav a:hover {
+  background: #dd390d;
+}
+
+.nav-numbers li a {
+	width: 15px !important;
+	height: 15px;
+	padding: 0px;
+	color: transparent;
+	display: block;
+	background-color: rgba(236, 240, 241,0.4);
+	border-radius: 100%;
+	
+  -webkit-transition: 0.5s all ease;
+	transition: 0.5s all ease;
+	-moz-transition: 0.5s all ease
+	-o-transition: 0.5s all ease;
+}
+
+
+/**
+ * Numbered Navigation
+ */
+.nav-numbers {
+  list-style: none;
+    padding-left: 0;
+}
+
+.nav-numbers li {
+	display: inline-block;
+	list-style: none;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.nav-numbers li.active a, .nav-numbers li a:hover {
+	
+  -webkit-transition: 0.5s all ease;
+	transition: 0.5s all ease;
+	-moz-transition: 0.5s all ease
+	-o-transition: 0.5s all ease;
+  background: rgba(236, 240, 241,1.0);
+}
+
+.nav-prev {
+	position: relative;
+	float: left;
+}
+
+.nav-next {
+	position: absolute;
+	float: right;
+}
+
+/**
+ * Navigation Description
+ */
+.nav-text {
+
+  color: #aaa;
+}
 
 /* === FOOTER === */
 

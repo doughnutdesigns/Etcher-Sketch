@@ -146,10 +146,31 @@
 
     <div id="testimonials" class="testimonials">
       <div class="container">
-        <h1>What people say about us</h1>
-          <!-- Example row of columns -->
-          <div class="row">
-          </div>
+          <div class="quotes">
+  <ul>
+
+  <li>
+    <blockquote>
+    <p class="quote">This theme does look nice, but I can't say it's worth $40.</p>
+    <p>Joe Perriam</p>
+    </blockquote>
+  </li>
+
+  <li>
+    <blockquote>
+    <p class="quote">Without doubt, this is one of the best themes I have ever purchased. Well worth the $40 price tag!</p>
+    <p>Taylor Liesnham</p>
+    </blockquote>
+  </li>
+
+  <li>
+    <blockquote>
+    <p class="quote">Human decency is not derived from religion. It precedes it.</p>
+    <p>— Christopher Hitchens</p>
+    </blockquote>
+  </li>
+  </ul>
+</div>
       </div>
     </div> <!-- /container -->
     <!-- end testimonials -->
@@ -160,7 +181,25 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/inviewport.js"></script>
+    <script src="js/jquery.quovolver.min.js"></script>
     <script>
+    $(document).ready(function() {
+  // Call Quovolver on the '.quotes' object
+  $('#testimonials .quotes').quovolver({
+  children : 'li',
+  transitionSpeed : 600,
+  autoPlay : true,
+  equalHeight : true,
+  navPosition : 'below',
+  navPrev     : true,
+  navNext     : true,
+  navNum      : true,
+  navText     : false
+  });
+});
+</script>
+
+<script>
       if($('#header').inViewport()) {
         $('#header').addClass('animated bounceInLeft');
       }
