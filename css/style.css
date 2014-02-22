@@ -218,12 +218,19 @@ h1 {
 
 .submit {
 	background-color: #2980b9;
-	box-sizing: border-box;
 	height: 45px;
 	border-radius: 8px;
 	width: 100%;
 	font-size: 16px;
 	border: none;
+	-webkit-transition: 0.3s background ease-in;
+	transition: 0.3s background ease-in;
+	-o-transition: 0.3s background ease-in;
+	-moz-transition: 0.3s background ease-in;
+}
+
+.submit:hover {
+	background: #3498db;
 }
 
 /* === GALLERY === */
