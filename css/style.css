@@ -80,7 +80,7 @@ h1 {
 
 .jumbotron {
 	text-align: center;
-	background: rgba(0,0,0,0) url('../img/nuke.jpg');
+	background: rgba(0,0,0,0) url('../img/peak.jpg');
 	background-size: cover;
 	background-position: center;
 	color: #ecf0f1;
@@ -94,7 +94,7 @@ h1 {
 .jumbotron:before {
   position: absolute;
   top: 0; right: 0; bottom: 0; left: 0;
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0,0,0,0.4);
   content: ' ';
 }
 
