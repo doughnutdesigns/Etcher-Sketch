@@ -14,8 +14,8 @@ body {
 }
 
 h1 {
-	font-family: 'Istok Web', sans-serif;
-	font-weight: 700;
+	font-family: 'Lato', cursive;
+	font-weight: 800;
 }
 
 /* === NAVIGATION === */
@@ -123,7 +123,7 @@ h1 {
 
 .services {
 	text-align: center;
-	color: #ecf0f1;
+	color: #7f8c8d;
 	padding-bottom: 60px;
 	position: relative;
 	z-index: 200;
@@ -134,7 +134,7 @@ h1 {
 }
 
 .services h2 {
-	font-weight: 100;
+	font-weight: 400;
 	padding-bottom: 20px;
 }
 
