@@ -44,9 +44,9 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#gallery">Gallery</a></li>
+            <li class="active"><a href="#home" id="home-link">Home</a></li>
+            <li><a href="#services" id="services-link">Services</a></li>
+            <li><a href="#gallery" id="gallery-link">Gallery</a></li>
             <li><a href="#testimonials">Testimonials</a></li>
             <li><a href="#contact">Contact Us</a></li>
           </ul>
@@ -154,6 +154,31 @@
       }
     </script>
     
+    <script>
+
+var homePlace = $("#home").offset().top - 70;
+var servicesPlace = $("#services").offset().top - 70;
+var galleryPlace = $("#gallery").offset().top - 70;
+
+$(document).scroll(function(){
+	if($(this).scrollTop() > homePlace)
+    {   
+    	$('.active').removeClass('active');
+    	$('#home-link').parent().addClass('active');
+    }
+    if($(this).scrollTop() > servicesPlace)
+    {   
+    	$('.active').removeClass('active');
+    	$('#services-link').parent().addClass('active');
+    }
+    if($(this).scrollTop() > galleryPlace)
+    {   
+    	$('.active').removeClass('active');
+    	$('#gallery-link').parent().addClass('active');
+    }
+});
+</script>
+    
         <script>
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
@@ -161,9 +186,11 @@ $(function() {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
+      	$('.active').removeClass('active');
         $('html,body').animate({
-          scrollTop: target.offset().top - 70
+          scrollTop: target.offset().top - 69
         }, 1000);
+        $(this).parent().addClass('active');
         return false;
       }
     }
