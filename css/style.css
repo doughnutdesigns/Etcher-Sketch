@@ -194,6 +194,17 @@ h1 {
 	padding-bottom: 40px;
 }
 
+.subscribe {
+	color: #95a5a6;
+	width: 100%;
+	margin-top: 30px;
+	border-radius: 8px;
+	border: none;
+	height: 40px;
+	padding: 10px;
+	text-align: center;
+}
+
 /* === GALLERY === */
 
 .gallery {
