@@ -232,6 +232,7 @@ h1 {
 	-o-transition: 0.3s background ease-in;
 	-moz-transition: 0.3s background ease-in;
 	font-weight: 700;
+	-webkit-appearance: none;
 }
 
 .submit:hover {
