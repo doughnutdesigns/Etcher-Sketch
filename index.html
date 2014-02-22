@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Etcher Sketch</title>
+    <title>Etcher Sketch - Landing Page</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -90,7 +90,7 @@
   <!-- begin gallery -->
   <div id="gallery" class="gallery">
     <div class="container">
-      <h1>Years of expertise</h1>
+      <h1 id="years">Years of expertise</h1>
         <!-- Example row of columns -->
         <div class="row">
           <div class="col-sm-6 col-md-3">
@@ -143,8 +143,12 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/inviewport.js"></script>
     <script>
-      $('#header').addClass('animated bounceInLeft');
-      $('#services').addClass('animated bounceIn');
+      if($('#header').inViewport()) {
+        $('#header').addClass('animated bounceInLeft');
+      }
+      if($('#services').inViewport()) {
+        $('#services').addClass('animated bounceIn');
+      }
     </script>
   </body>
 </html>
