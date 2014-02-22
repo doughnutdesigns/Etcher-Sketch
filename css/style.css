@@ -7,7 +7,7 @@
 }
 
 body {
-  padding-top: 50px;
+	padding-top: 70px;
   padding-bottom: 20px;
   font-family: 'Lato', sans-serif;
   background-color: #ecf0f1;
@@ -41,21 +41,31 @@ h1 {
 }
 
 .navbar-toggle {
-	-webkit-transition: 0.2s background-color ease-in;
-	transition: 0.2s background-color ease-in;
-	-moz-transition: 0.2s background-color ease-in;
-	-o-transition: 0.2s background-color ease-in;
-	border: 3px solid #95a5a6 !important;
-	background-color: #ecf0f1;
-	line-height: 35px;
+	line-height: 80px;
+	margin: 0px;
+	margin-top: 23px;
+	outline: none;
+	background: #2c3e50;
+	border: 2px solid #fff;
+	color: #fff;
+	position: abslolute;
+	z-index: 2000;
+	transition: 0.5s background ease-in-out;
+	-o-transition: 0.5s background ease-in-out;
+	-moz-transition: 0.5s background ease-in-out;
+	-webkit-transition: 0.5s background ease-in-out;
 }
 
 .navbar-toggle:hover {
-	background-color: #95a5a6 !important;
+	background-color: #34495e !important;
 }
 
-.navbar-toggle:focus {
-	background-color: #95a5a6 !important;
+.navbar-toggle:focus{
+	background-color: #34495e !important;
+}
+
+.navbar-toggle span {
+	background-color: red;
 }
 
 .navbar-inverse {
