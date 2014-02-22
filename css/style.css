@@ -45,6 +45,8 @@ h1 {
 	-moz-transition: 0.2s background-color ease-in;
 	-o-transition: 0.2s background-color ease-in;
 	position: relative;
+	border: 3px solid #95a5a6 !important;
+	background-color: #ecf0f1;
 }
 
 .navbar-toggle:hover {
