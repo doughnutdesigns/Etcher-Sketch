@@ -306,9 +306,17 @@ blockquote {
 	list-style: none;
 }
 
+.quovolve li p {
+	font-style: italic;
+	font-weight: 300;
+	color: rgba(255,255,255,0.6);
+}
+
 .quovolve li p.quote {
 	font-size: 24px;
 	font-weight: 300;
+	font-style: normal;
+	color: white;
 }
 
 .quovolve-nav a:hover {
