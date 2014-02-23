@@ -272,15 +272,16 @@ h1 {
 .gallery img {
 	margin: 0 auto;
 	margin-bottom: 30px;
-	-webkit-transition: 0.3s opacity ease-in, 0.3s border-color ease-in;
-	transition: 0.3s opacity ease-in, 0.3s border-color ease-in;
-	-o-transition: 0.3s opacity ease-in, 0.3s border-color ease-in;
-	-moz-transition: 0.3s opacity ease-in, 0.3s border-color ease-in;
+	-webkit-transition: 0.2s opacity ease-in, 0.2s border-color ease-in;
+	transition: 0.2s opacity ease-in, 0.2s border-color ease-in;
+	-o-transition: 0.2s opacity ease-in, 0.2s border-color ease-in;
+	-moz-transition: 0.2s opacity ease-in, 0.2s border-color ease-in;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	border: 3px solid transparent;
 	border-radius: 10px;
 	width: 100%;
+	cursor: pointer;
 }
 
 .gallery img:hover {
