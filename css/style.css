@@ -65,7 +65,7 @@ h1 {
 }
 
 .navbar-toggle:focus{
-	background-color: #34495e !important;
+	background-color: rgba(52, 152, 219,0.2) !important;
 }
 
 
