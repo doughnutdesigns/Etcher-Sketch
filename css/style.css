@@ -184,7 +184,6 @@ h1 {
 
 .services h2 {
 	font-size: 26px;
-	font-weight: 300;
 	padding-bottom: 20px;
 	font-weight: 700;
 }
@@ -392,12 +391,16 @@ blockquote {
 	text-align: left;
 	padding-top: 40px;
 	padding-bottom: 40px;
-	font-weight: 700;
+	font-weight: 600;
 	font-size: 16px;
 }
 
-.featured .row {
-	margin: 0 auto;
+.featured h2 {
+	color: #7f8c8d;
+}
+
+.featured p {
+	color: #95a5a6;
 }
 
 .featured img {
