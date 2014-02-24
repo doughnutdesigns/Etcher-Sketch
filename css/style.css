@@ -387,7 +387,21 @@ blockquote {
 /* === FEATURED SERVICE === */
 
 .featured {
-	
+	background-color: #ecf0f1;
+	color: #7f8c8d;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+/* === CONTACT === */
+
+.contact {
+	background-color: rgba(52, 152, 219,0.8);
+	color: #fff;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
 
 /* === FOOTER === */
