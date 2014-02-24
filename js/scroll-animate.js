@@ -1,6 +1,9 @@
 $(document).ready(function() {
   $('#services').css("visibility", "hidden");
   $('#newsletter-signup').css("visibility", "hidden");
+  $('.portfolio').css("visibility", "hidden");
+  $('#monkey').css("visibility", "hidden");
+  $('#featured').css("visibility", "hidden");
   $(document).scroll(function() {
       if($('#services').inViewport('horizontal')) {
         $('#services').css("visibility", "visible");
@@ -9,6 +12,18 @@ $(document).ready(function() {
       if($('#newsletter-signup').inViewport('vertical')) {
         $('#newsletter-signup').css("visibility", "visible");
         $('#newsletter-signup').addClass('animated bounceIn');
+      }
+      if($('.portfolio').inViewport('vertical')) {
+        $('.portfolio').css("visibility", "visible");
+        $('.portfolio').addClass('animated fadeIn');
+      }
+      if($('#monkey').inViewport('vertical')) {
+        $('#monkey').css("visibility", "visible");
+        $('#monkey').addClass('animated bounceInLeft');
+      }
+      if($('#featured').inViewport('vertical')) {
+        $('#featured').css("visibility", "visible");
+        $('#featured').addClass('animated fadeIn');
       }
     });
 })
