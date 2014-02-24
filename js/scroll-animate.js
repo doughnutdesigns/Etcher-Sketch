@@ -5,7 +5,7 @@ $(document).ready(function() {
   $('#monkey').css("visibility", "hidden");
   $('#featured').css("visibility", "hidden");
   $(document).scroll(function() {
-      if($('#services').inViewport('horizontal')) {
+      if($('#services').inViewport('vertical')) {
         $('#services').css("visibility", "visible");
         $('#services').addClass('animated bounceIn');
       }
