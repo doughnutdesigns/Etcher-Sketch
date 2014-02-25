@@ -23,7 +23,7 @@ $(document).ready(function() {
       }
       if($('#featured').inViewport('vertical')) {
         $('#featured').css("visibility", "visible");
-        $('#featured').addClass('animated fadeIn');
+        $('#featured').addClass('animated fadeInRight');
       }
     });
 })
