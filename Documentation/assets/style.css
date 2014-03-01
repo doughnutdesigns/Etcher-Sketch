@@ -88,11 +88,20 @@ body {
 	background-color: transparent;
 	box-sizing:border-box;
 	-moz-box-sizing:border-box;
-	padding: 40px;
+	padding-top: 0px;
+	padding-right: 40px;
+	padding-bottom: 40px;
 	padding-left: 330px;
 }
 
-.main-content .section {
+.main-content .section-wrap {
+	width: 100%;
+	height: auto;
+	display: block;
+	padding-top: 40px;
+}
+
+.main-content .section-wrap .section {
 	width: 100%;
 	height: auto;
 	display: block;
@@ -103,7 +112,6 @@ body {
 	color: #444444;
 	line-height: 28px;
 	font-size: 14px;
-	margin-bottom: 40px;
 }
 
 .main-content .section a {
