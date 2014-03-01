@@ -107,9 +107,9 @@ body {
 }
 
 .main-content .section a {
-	color: rgba(45,100,110,0.4);
+	color: rgba(45,100,110,0.7);
 	text-decoration: none;
-	border-bottom: 1px dotted rgba(64,170,190,0.4);
+	border-bottom: 1px dotted rgba(64,170,190,0.7);
 	-webkit-transition: all 0.2s;
 	transition: all 0.2s;
 }
@@ -133,6 +133,6 @@ body {
 
 
 .main-content .section .doc-info {
-	color: rgba(45,100,110,0.4);
+	color: rgba(45,100,110,0.7);
 	font-size: 12px;
 }
