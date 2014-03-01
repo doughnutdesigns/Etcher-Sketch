@@ -57,7 +57,7 @@ body {
 	padding-bottom: 15px;
 	color: white;
 	text-decoration: none;
-	border-bottom: 1px solid rgba(68,68,68,0.6);
+	border-bottom: 1px solid rgba(68,68,68,0.4);
 	font-weight: 300;
 	-webkit-transition: all 0.2s;
 	transition: all 0.2s;
@@ -65,15 +65,15 @@ body {
 }
 
 .navigation .actual-nav a:hover, .navigation .actual-nav a.active {
-	background-color: rgba(68,68,68,0.5);
+	background-color: rgba(68,68,68,0.45);
 }
 
 .navigation .actual-nav a:first-child {
-	border-top: 1px solid rgba(68,68,68,0.6);
+	border-top: 1px solid rgba(68,68,68,0.4);
 }
 
 .navigation .actual-nav a:last-child {
-	border-top: 1px solid rgba(68,68,68,0.6);
+	border-top: 1px solid rgba(68,68,68,0.4);
 	margin-top: 40px;
 }
 
@@ -110,6 +110,13 @@ body {
 	color: rgba(45,100,110,0.4);
 	text-decoration: none;
 	border-bottom: 1px dotted rgba(64,170,190,0.4);
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.main-content .section a:hover {
+	color: rgba(45,100,110,1);
+	border-bottom: 1px dotted rgba(64,170,190,1);
 }
 
 .main-content .section h2 {
