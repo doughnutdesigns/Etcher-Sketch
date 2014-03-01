@@ -20,17 +20,17 @@
 			<h1>Doughnut Designs</h1>
 		</div>
 		<div class="actual-nav">
-			<a class="scroll active" href="#top"><i class="fa fa-home fa-fw"></i> Top</a>
-			<a class="scroll" href="#html-structure"><i class="fa fa-code fa-fw"></i> HTML Structure</a>
-			<a class="scroll" href="#css-structure"><i class="fa fa-code fa-fw"></i> CSS Structure</a>
-			<a class="scroll" href="#javascript"><i class="fa fa-code fa-fw"></i> JavaScript & jQuery</a>
+			<a class="scroll active" id="top-link" href="#top"><i class="fa fa-home fa-fw"></i> Top</a>
+			<a class="scroll" id="html-link" href="#html-structure"><i class="fa fa-code fa-fw"></i> HTML Structure</a>
+			<a class="scroll" id="css-link" href="#css-structure"><i class="fa fa-code fa-fw"></i> CSS Structure</a>
+			<a class="scroll" id="js-link" href="#javascript"><i class="fa fa-code fa-fw"></i> JavaScript & jQuery</a>
 			<a class="scroll" href=""><i class="fa fa-code fa-fw"></i> Bootstrap</a>
 			<a class="scroll" href=""><i class="fa fa-edit fa-fw"></i> Customising</a>
-			<a class="scroll" href="#email-subscription"><i class="fa fa-envelope-o fa-fw"></i> Email Subscription</a>
+			<a class="scroll" id="email-link" href="#email-subscription"><i class="fa fa-envelope-o fa-fw"></i> Email Subscription</a>
 			<a class="scroll" href=""><i class="fa fa-gear fa-fw"></i> CSS Animations</a>
 			<a class="scroll" href=""><i class="fa fa-phone fa-fw"></i> Contact Form</a>
 			<a class="scroll" href=""><i class="fa fa-star-o fa-fw"></i> Credits</a>
-			<a class="scroll" href="#theme-support"><i class="fa fa-bullhorn fa-fw"></i> Theme Support</a>
+			<a class="scroll" id="theme-link" href="#theme-support"><i class="fa fa-bullhorn fa-fw"></i> Theme Support</a>
 		</div>
 	
 	</div>
@@ -149,6 +149,47 @@
 <script type="text/javascript" src="assets/jquery.js"></script>
 
 <script type="text/javascript">
+
+	var topPlace = $("#top").offset().top - 1;
+	var htmlPlace = $("#html-structure").offset().top - 1;
+	var cssPlace = $("#css-structure").offset().top -1 ;
+	var javascriptPlace = $("#javascript").offset().top - 1;
+	var emailPlace = $("#email-subscription").offset().top - 1;
+	var themePlace = $("#theme-support").offset().top - 1;
+	
+	$(document).scroll(function(){
+		if($(this).scrollTop() > topPlace)
+	    {   
+	    	$('.active').removeClass('active');
+	    	$('#top-link').addClass('active');
+	    }
+	    if($(this).scrollTop() > htmlPlace)
+	    {   
+	    	$('.active').removeClass('active');
+	    	$('#html-link').addClass('active');
+	    }
+	    if($(this).scrollTop() > cssPlace)
+	    {   
+	    	$('.active').removeClass('active');
+	    	$('#css-link').addClass('active');
+	    }
+	    if($(this).scrollTop() > javascriptPlace)
+	    {   
+	    	$('.active').removeClass('active');
+	    	$('#js-link').addClass('active');
+	    }
+	    if($(this).scrollTop() > emailPlace)
+	    {   
+	    	$('.active').removeClass('active');
+	    	$('#email-link').addClass('active');
+	    }
+	    if($(this).scrollTop() > themePlace)
+	    {   
+	    	$('.active').removeClass('active');
+	    	$('#theme-link').addClass('active');
+	    }
+	});
+
 	$(".scroll").click(function (event) {
 	    event.preventDefault();
 	    //calculate destination place
@@ -162,6 +203,8 @@
 	    $('html,body').animate({
 	        scrollTop: dest
 	    }, 1000, 'swing');
+	    $('.active').removeClass('active');
+	    $(this).addClass('active');
 	});
 </script>
 
