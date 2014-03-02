@@ -113,6 +113,10 @@ body {
 	font-size: 14px;
 }
 
+.main-content .section-wrap:last-child {
+	padding-bottom: 40px;
+}
+
 .main-content .section a {
 	color: rgba(45,100,110,0.7);
 	text-decoration: none;
