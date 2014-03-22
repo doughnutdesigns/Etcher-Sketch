@@ -29,7 +29,7 @@
 			<a class="scroll" id="email-link" href="#email-subscription"><i class="fa fa-envelope-o fa-fw"></i> Email Subscription</a>
 			<a class="scroll" href=""><i class="fa fa-gear fa-fw"></i> CSS Animations</a>
 			<a class="scroll" href=""><i class="fa fa-phone fa-fw"></i> Contact Form</a>
-			<a class="scroll" href=""><i class="fa fa-star-o fa-fw"></i> Credits</a>
+			<a class="scroll" id="credits-link" href="#credits"><i class="fa fa-star-o fa-fw"></i> Credits</a>
 			<a class="scroll" id="theme-link" href="#theme-support"><i class="fa fa-bullhorn fa-fw"></i> Theme Support</a>
 		</div>
 	
@@ -148,6 +148,25 @@
 			</div>
 		</div>
 		
+		<div class="section-wrap" id="credits">
+			<div class="section">
+				<h2><i class="fa fa-star-o fa-fw"></i> Credits</h2>
+				<hr />
+				<p>We've used a few different images and plugins to help make this template even better. Here is what we used:</p>
+				<ul>
+					<li><a href="http://getbootstrap.com" target="_blank">Bootstrap 3</a></li>
+					<li><a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">Font Awesome</a></li>
+					<li><a href="https://github.com/xakiru/inViewport" target="_blank">inViewport.js</a></li>
+					<li><a href="https://github.com/sebnitu/Quovolver" target="_blank">Quovolver</a></li>
+					<li><a href="http://daneden.github.io/animate.css/" target="_blank">Animate.css</a></li>
+				</ul>
+				<ul>
+					<li><a href="http://dribbble.com" target="_blank">Gallery images from Dribbble</a></li>
+					<li><a href="http://interfacelift.com/wallpaper/details/3393/freshly_coated_matterhorn.html" target="_blank">Header image from InterfaceLIFT</a></li>
+				</ul>
+			</div>
+		</div>
+		
 		<div class="section-wrap" id="theme-support">
 			<div class="section">
 				<h2><i class="fa fa-bullhorn fa-fw"></i> Theme Support</h2>
@@ -173,6 +192,7 @@
 	var bootstrapPlace = $("#bootstrap").offset().top - 1;
 	var customisePlace = $("#customise").offset().top - 1;
 	var emailPlace = $("#email-subscription").offset().top - 1;
+	var creditsPlace = $("#credits").offset().top - 1;
 	var themePlace = $("#theme-support").offset().top - 1;
 	
 	$(document).scroll(function(){
@@ -210,6 +230,16 @@
 	    {   
 	    	$('.active').removeClass('active');
 	    	$('#email-link').addClass('active');
+	    }
+	    if($(this).scrollTop() > creditsPlace)
+	    {   
+	    	$('.active').removeClass('active');
+	    	$('#credits-link').addClass('active');
+	    }
+	    if($(this).scrollTop() > themePlace)
+	    {   
+	    	$('.active').removeClass('active');
+	    	$('#theme-link').addClass('active');
 	    }
 	});
 
