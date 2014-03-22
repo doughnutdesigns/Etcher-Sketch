@@ -88,7 +88,24 @@
     </div> <!-- /container -->
   <!-- end services -->
 
-  <!-- begin email-subscribe NEED TO FINISH AJAX STYLING -->
+
+
+<!-- begin email subscribe -->
+<div class="email" id="subscribe">
+	<div class="container">
+      <h1>Subscribe to our newsletter</h1>
+		<div class="email-subscribe">
+		<form id="newsletter-signup" action="php/subscribe.php?action=signup" method="post">
+			<input type="email" class="enteremail" name="signup-email" placeholder="Please enter your email address" />
+			<input type="submit" id="signup-button" value="Get Notified" />
+			<div id="signup-response" class="signup"></div>
+		</form>
+	</div>
+	</div>
+</div>
+		<!-- end email subsciribe -->
+		
+  <!--
   <div class="email" id="subscribe">
     <div class="container">
       <h1>Subscribe to our newsletter</h1>
@@ -101,7 +118,7 @@
       </div>
     </div>
   </div>
-  <!-- end email-subscribe -->
+  -->
 
   <!-- begin gallery -->
   <div id="gallery" class="gallery">
@@ -228,7 +245,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/inviewport.js"></script>
     <script src="js/jquery.quovolver.min.js"></script>
-    <script src="js/subscribe.js"></script>
+    <script src="js/emailsubscribe.js"></script>
     <script src="js/scroll-nav.js"></script>
     <script src="js/scroll-animate.js"></script>
     

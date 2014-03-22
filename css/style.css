@@ -211,6 +211,7 @@ h1 {
 	position: relative;
 }
 
+/*
 .email .row {
 	margin-top: 40px;
 	margin-bottom: 40px;
@@ -253,6 +254,121 @@ h1 {
 .submit:hover {
 	background: #3498db;
 }
+
+*/
+
+
+.email-subscribe {
+	width: 100%;
+	height: 50px;
+	margin:0 auto;
+	margin-top: 40px;
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+}
+
+.signup {
+	width: 28%;
+	height: 50px;
+	float: right;
+	border: 1px solid rgba(254,229,240,0.5);
+	background-color: #FAFAFA;
+	border-radius: 4px;
+	margin-top: -50px;
+	display: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: center;
+	line-height: 50px;
+	font-weight: 300;
+	font-size: 16px;
+	color: #999999;
+	transition: width 2s ease;
+	-webkit-transition: width 2s ease;
+}
+
+.signup-waiting {
+	background-image: url("../images/ajax-loader.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #FAFAFA;
+}
+
+.signup-error {
+	background-color: #FEAD66;
+	color: white;
+}
+
+.signup-success {
+	background-color: #76FF82;
+	width: 100%;
+	color: white;
+}
+
+.enteremail {
+	height: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 70%;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	outline: none;
+	border: 1px solid rgba(254,229,240,0.5);
+	background-color: #FAFAFA;
+	border-radius: 4px;
+	color: #999999;
+	font-size: 16px;
+	float: left;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-appearance: none;
+}
+
+.enteremail:focus {
+	border: 1px solid rgba(254,229,240,1);
+}
+
+.email-subscribe input[type='submit'] {
+	width: 28%;
+	height: 50px;
+	background-color: rgba(131,203,255,0.5);
+	outline: none;
+	float: right;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	border: none;
+	border-radius: 4px;
+	color: white;
+	cursor: pointer;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid rgba(254,229,240,0.5);
+	transition: background-color 0.5s ease;
+	-webkit-transition: background-color 0.5s ease;
+	-webkit-appearance: none;
+}
+
+.email-subscribe input[type='submit']:hover {
+	background-color: rgba(131,203,255,1);
+}
+
+.email-subscribe input[type='submit']:active {
+	box-shadow: 0px 1px 2px rgba(43,115,166,0.5) inset;
+}
+
+@media all and (max-width: 679px) {
+	.enteremail { width: 100%; }
+	.signup, .email-subscribe input[type='submit'] { width: 100% !important; float: none; margin-top: 20px; }
+	.email-subscribe { height: 120px; }
+	.signup-error, .signup-waiting { position: absolute; margin-top: -50px; }
+	.signup-success, .signup-moveup { position: absolute; margin-top: 0px; }
+	.signup-done { display: none; }
+}
+
 
 /* === GALLERY === */
 
