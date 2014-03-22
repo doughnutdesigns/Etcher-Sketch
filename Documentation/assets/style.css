@@ -29,11 +29,14 @@ body {
 .navigation .logo {
 	width: 100%;
 	height: auto;
-	background-color: transparent;
+	background-image: url('images/tf-header.jpg');
+	background-size: cover;
+	background-position: center;
 	box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	padding: 10px;
 	text-align: center;
+	height: 120px;
 }
 
 .navigation .logo h1 {
