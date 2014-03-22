@@ -24,7 +24,6 @@
 			<a class="scroll" id="html-link" href="#html-structure"><i class="fa fa-code fa-fw"></i> HTML Structure</a>
 			<a class="scroll" id="css-link" href="#css-structure"><i class="fa fa-code fa-fw"></i> CSS Structure</a>
 			<a class="scroll" id="js-link" href="#javascript"><i class="fa fa-code fa-fw"></i> JavaScript & jQuery</a>
-			<a class="scroll" id="bootstrap-link" href="#bootstrap"><i class="fa fa-code fa-fw"></i> Bootstrap</a>
 			<a class="scroll" id="customise-link" href="#customise"><i class="fa fa-edit fa-fw"></i> Customisation</a>
 			<a class="scroll" id="email-link" href="#email-subscription"><i class="fa fa-envelope-o fa-fw"></i> Email Subscription</a>
 			<a class="scroll" href=""><i class="fa fa-gear fa-fw"></i> CSS Animations</a>
@@ -71,14 +70,6 @@
 				<h2><i class="fa fa-code fa-fw"></i> JavaScript & jQuery</h2>
 				<hr />
 				<p>Some JS Docs</p>
-			</div>
-		</div>
-		
-		<div class="section-wrap" id="bootstrap">
-			<div class="section">
-				<h2><i class="fa fa-code fa-fw"></i> Bootstrap</h2>
-				<hr />
-				<p>Some Bootstrap Docs</p>
 			</div>
 		</div>
 		
@@ -189,7 +180,6 @@
 	var htmlPlace = $("#html-structure").offset().top - 1;
 	var cssPlace = $("#css-structure").offset().top -1 ;
 	var javascriptPlace = $("#javascript").offset().top - 1;
-	var bootstrapPlace = $("#bootstrap").offset().top - 1;
 	var customisePlace = $("#customise").offset().top - 1;
 	var emailPlace = $("#email-subscription").offset().top - 1;
 	var creditsPlace = $("#credits").offset().top - 1;
@@ -215,11 +205,6 @@
 	    {   
 	    	$('.active').removeClass('active');
 	    	$('#js-link').addClass('active');
-	    }
-	    if($(this).scrollTop() > bootstrapPlace)
-	    {   
-	    	$('.active').removeClass('active');
-	    	$('#bootstrap-link').addClass('active');
 	    }
 	    if($(this).scrollTop() > customisePlace)
 	    {   
