@@ -542,6 +542,10 @@ blockquote {
 	color: #fff;
 }
 
+.contact-form {
+	width: 100%;
+}
+
 /* === FOOTER === */
 
 .footer {
