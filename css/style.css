@@ -580,6 +580,10 @@ blockquote {
 	-webkit-appearance: none;
 }
 
+.contact-send:hover {
+	background-color: rgba(131,203,255,1);
+}
+
 /* === FOOTER === */
 
 .footer {
