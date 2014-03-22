@@ -272,7 +272,6 @@ h1 {
 	width: 28%;
 	height: 50px;
 	float: right;
-	border: 1px solid rgba(254,229,240,0.5);
 	background-color: #FAFAFA;
 	border-radius: 4px;
 	margin-top: -50px;
@@ -282,7 +281,6 @@ h1 {
 	box-sizing: border-box;
 	text-align: center;
 	line-height: 50px;
-	font-weight: 300;
 	font-size: 16px;
 	color: #999999;
 	transition: width 2s ease;
