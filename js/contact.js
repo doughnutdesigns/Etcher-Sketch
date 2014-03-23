@@ -53,7 +53,7 @@ $(document).ready(function(){
 				$("#contact-button").addClass("contact-button-error").delay(3000).queue(function(){
 	    			$(this).removeClass("contact-button-error").dequeue();
 				});
-				$('.contact-response').html('Please enter a valid email').addClass("contact-error").delay(3000).queue(function(){
+				$('.contact-response').html('Please fix errors and try again').addClass("contact-error").delay(3000).queue(function(){
 	    			$(this).removeClass("contact-error").dequeue();
 				});
 			}
