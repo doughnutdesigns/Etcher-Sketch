@@ -575,6 +575,51 @@ blockquote {
 	background-color: rgba(131,203,255,1);
 }
 
+.contact-button-error {
+	background-color: rgba(231, 76, 60,0.8) !important;
+	color: #ecf0f1 !important;
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+}
+
+.contact-response {
+	display: inline-block;
+	opacity: 0;
+	float: right;
+	height: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
+	line-height: 50px;
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+}
+
+.contact-response.contact-error {
+	opacity: 1;
+	background-color: rgba(231, 76, 60,0.8);
+	color: #ecf0f1;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.contact-form-input {
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	border: 2px solid rgba(255,255,255,0) !important;
+}
+
+.contact-form-input.contact-form-error {
+	border: 2px solid red !important;
+	background-color: white !important;
+}
+
 /* === FOOTER === */
 
 .footer {

@@ -221,12 +221,15 @@
             <p>Maybe put address contact details in here</p>
           </div>
           <div class="col-md-8">
-            <form name="contact" method="post" action="">
-              <input type="text" name="full_name" placeholder="Full Name" class="contact-form">
-              <input type="text" name="email" placeholder="Email address" class="contact-form">
-              <textarea name="message" placeholder="Your message" class="message"></textarea>
-              <input type="submit" class="contact-send">
-            </form>
+   
+            
+            <form id="contact-form" action="php/contact.php?action=contact" method="post">
+							<input type="text" class="contact-form contact-form-input" id="contact-name" name="contact-name" placeholder="Name" />
+							<input type="email" class="contact-form contact-form-input" id="contact-email" name="contact-email" placeholder="Email" />
+							<textarea class="contact-form contact-form-input message" placeholder="Message" id="contact-message" name="contact-message"></textarea>
+							<input type="submit" class="contact-send" id="contact-button" value="Send" />
+							<div id="contact-response" class="contact-response"></div>
+						</form>
           </div>
         </div>
       </div>
@@ -249,6 +252,7 @@
     <script src="js/emailsubscribe.js"></script>
     <script src="js/scroll-nav.js"></script>
     <script src="js/scroll-animate.js"></script>
+    <script src="js/contact.js"></script>
     
     <script>
 		$(document).ready(function() {
